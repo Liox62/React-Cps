@@ -18,8 +18,14 @@ export default function HomeScreen() {
         <Text style={styles.courseText}>Informática para Internet</Text>
       </View>
 
+      <View style={styles.courseBox}>
+        <Text style={styles.courseText}>
+          Técnico em Informática para Internet
+        </Text>
+      </View>
+
       <Image
-        source={require("@/assets/images/etec.jpg")}
+        source={require("@/assets/images/lagosta.jpg")}
         style={styles.mainImage}
         contentFit="cover"
       />
@@ -29,7 +35,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#818181",
     alignItems: "center",
     paddingTop: 50,
   },
@@ -42,7 +48,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 40,
     fontWeight: "bold",
-    color: "#ad0000",
+    color: "#ffd000",
     marginBottom: 10,
   },
 
@@ -53,7 +59,7 @@ const styles = StyleSheet.create({
 
   courseBox: {
     borderWidth: 2,
-    borderColor: "#ad0000",
+    borderColor: "#ffd000",
     borderRadius: 10,
     paddingVertical: 15,
     paddingHorizontal: 25,
@@ -63,11 +69,11 @@ const styles = StyleSheet.create({
   courseText: {
     fontSize: 18,
     fontWeight: "600",
-    color: "#000",
+    color: "#ffd000",
   },
 
   mainImage: {
-    width: 550,
+    width: 350,
     height: 250,
     borderRadius: 10,
   },
